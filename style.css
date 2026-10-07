@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f3f6f9;
+
+    color: #333;
+
+}
+
+
+/* CABEÇALHO */
+
+header {
+
+    background: #1976d2;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+}
+
+header h1 {
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+}
+
+header p {
+
+    font-size: 18px;
+
+}
+
+
+/* CONTEÚDO */
+
+main {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+
+}
+
+
+/* CARDÁPIO DE HOJE */
+
+.hoje {
+
+    margin-bottom: 50px;
+
+}
+
+.hoje h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+.card-hoje {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    border-left: 8px solid #1976d2;
+
+}
+
+.card-hoje span {
+
+    color: #1976d2;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+}
+
+.card-hoje h3 {
+
+    margin-top: 10px;
+
+    font-size: 28px;
+
+}
+
+.card-hoje p {
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+}
+
+
+/* SEMANA */
+
+.semana h2 {
+
+    margin-bottom: 25px;
+
+}
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+
+    gap: 20px;
+
+}
+
+
+/* CARD */
+
+.card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+
+}
+
+.card h3 {
+
+    color: #1976d2;
+
+    margin-bottom: 15px;
+
+}
+
+.card h4 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+.card p {
+
+    line-height: 1.5;
+
+}
+
+
+/* DIA ATUAL */
+
+.card.atual {
+
+    border: 3px solid #1976d2;
+
+}
+
+
+/* RODAPÉ */
+
+footer {
+
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+}
+
+footer p {
+
+    margin: 5px;
+
+}
+
+
+/* CELULAR */
+
+@media(max-width: 600px) {
+
+    header h1 {
+
+        font-size: 28px;
+
+    }
+
+    main {
+
+        padding: 25px 15px;
+
+    }
+
+}
